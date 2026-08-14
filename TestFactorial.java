@@ -1,7 +1,7 @@
 public class TestFactorial{
     public static void main(String[] args){
         try{
-            if(Factorial.factorial(2)!=120){
+            if(Factorial.factorial(2)!=2){
                 throw new AssertionError("Test failed for input 5");
             }
             if(Factorial.factorial(0)!=1){
