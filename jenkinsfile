@@ -1,11 +1,6 @@
 pipeline{
     agent any
     stages{
-        stage('Checkout'){
-            steps{
-                git branch: 'main', url:'https://github.com/bavRaghu/devops-4'
-            }
-        }
         stage('Compile'){
             steps{
                 bat 'javac Factorial.java TestFactorial.java'
